@@ -20,8 +20,8 @@ const SBannerSlider = ({ images }) => {
         <StyledSlider {...settings}>
             {images.map((image, index) => (
                 <div key={index}>
-                    <Link to={image.link}>
-                        <img src={image.url} alt={`Slide ${index + 1}`} />
+                    <Link to={/*넘어갈 페이지*/}>
+                        <img src={/*백한테 받을 이미지링크*/} alt={`Slide ${index + 1}`} />
                     </Link>
                 </div>
             ))}
