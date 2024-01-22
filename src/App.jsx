@@ -1,9 +1,11 @@
 import './App.css';
+import SBannerSlider from './components/SBannerSlider';
+import SBannerCont from './components/SBannerSlider';
 
 function App() {
   return (
     <div>
-      <h1>Hello, Gurdening!</h1>
+      <SBannerSlider/>
     </div>
   );
 }
