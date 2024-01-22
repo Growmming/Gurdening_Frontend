@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ListContainer, ListItem, Icon, Text } from './MyPage.Style'; // 스타일 임포트
+import * as S from './MyPage.Style'; // 스타일 임포트
 
 export default function MyPageList({ items, isLoggedIn }) {
   const navigate = useNavigate();
@@ -14,13 +14,13 @@ export default function MyPageList({ items, isLoggedIn }) {
   };
 
   return (
-    <ListContainer>
+    <S.ListContainer>
       {items.map((item) => (
-        <ListItem key={item.key} onClick={() => handleItemClick(item)}>
-          <Icon>{/* 아이콘 */}</Icon>
-          <Text>{isLoggedIn ? item.textLoggedIn : item.text}</Text>
-        </ListItem>
+        <S.ListItem key={item.key} onClick={() => handleItemClick(item)}>
+          <S.Icon>{/* 아이콘 */}</S.Icon>
+          <S.Text>{isLoggedIn ? item.textLoggedIn : item.text}</S.Text>
+        </S.ListItem>
       ))}
-    </ListContainer>
+    </S.ListContainer>
   );
 }
