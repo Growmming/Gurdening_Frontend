@@ -41,7 +41,7 @@ const Banner = () => {
   return (
     <S.BannerWrapper>
       <S.BannerStyle>
-        <div className="banner-text">Today's Menual</div>
+        <div className="banner-text">오늘의 추천 매뉴얼</div>
         <Slider {...settings}>
           {images.map((image, index) => (
             <div key={index} onClick={() => handleImageClick(image.route)}>

@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const BannerWrapper = styled.div`
-  width: 325px;
+  width: 350px;
+  overflow: hidden;
 `;
 
 export const BannerStyle = styled.div`
@@ -10,24 +11,23 @@ export const BannerStyle = styled.div`
   .banner-text {
     position: absolute;
     top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
     z-index: 10;
     max-width: 100%; // 텍스트 영역의 최대 너비
     white-space: nowrap; // 텍스트가 줄바꿈되지 않도록 설정
+    text-align: center;
 
     width: 100%;
     color: white;
     font-size: 20px;
     background-color: #fbb24d;
-    padding: 5px 60px;
+    padding: 5px 50px;
     margin: 70px 25px 800px 25px; //top right bottom left
     // border-top-left-radius: 20px;
     // border-top-right-radius: 20px;
   }
 
   .banner-image img {
-    width: 80%;
+    width: 325px;
     display: block;
     margin: 0 auto;
   }
@@ -36,8 +36,8 @@ export const BannerStyle = styled.div`
     height: auto; // 높이는 자동으로 조절
     // 이미지 크기 조절을 위한 추가 스타일
     // width: 100%; // 이미지 너비를 줄입니다 (예: 전체 너비의 80%)
-    margin-top: 140px;
-    margin-left: 20px;
+    margin-top: 110px;
+    margin-left: 25px;
   }
 
   .slick-dots {
