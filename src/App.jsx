@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
-// import NavBar from './components/navBar/NavBar';
+import NavBar from './components/navBar/NavBar';
 // import Category from '../pages/category/Category';
 // import Search from '../pages/search/Search';
 // import MyPage from '../pages/mypage/MyPage';
@@ -23,7 +23,7 @@ const Container = styled.div`
 const App = () => {
   return (
     <Wrapper>
-      {/* <NavBar /> */}
+      <NavBar />
       <Container>
         <Routes>
           <Route path="/" element={<Home />} />
