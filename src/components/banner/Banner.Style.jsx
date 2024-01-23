@@ -1,42 +1,44 @@
 import styled from 'styled-components';
 
+export const BannerWrapper = styled.div`
+  width: 325px;
+`;
+
 export const BannerStyle = styled.div`
-  position: relative; // 오버레이를 위한 상대적 위치 설정
+  position: relative;
 
   .banner-text {
-    position: absolute; // 절대 위치 사용
-    top: 10px; // 상단에서의 위치
-    left: 50%; // 가운데 정렬을 위해 왼쪽에서 50% 위치
-    transform: translateX(-50%); // 가운데 정렬을 위한 변환
-    z-index: 10; // 이미지 위에 표시되도록 z-index 설정
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
     max-width: 100%; // 텍스트 영역의 최대 너비
     white-space: nowrap; // 텍스트가 줄바꿈되지 않도록 설정
 
-    
-    // 스타일링
+    width: 100%;
     color: white;
     font-size: 20px;
     background-color: #fbb24d;
     padding: 5px 60px;
-    margin : 80px 25px 800px 25px; //top right bottom left
+    margin: 70px 25px 800px 25px; //top right bottom left
     // border-top-left-radius: 20px;
     // border-top-right-radius: 20px;
   }
 
-  .banner-image {
-    width: 100%;
+  .banner-image img {
+    width: 80%;
     display: block;
+    margin: 0 auto;
   }
-
   img {
-    max-width: 300px; // 이미지 최대 너비
-    height: 322px; // 높이는 자동으로 조절
+    max-width: 325px; // 이미지 최대 너비
+    height: auto; // 높이는 자동으로 조절
     // 이미지 크기 조절을 위한 추가 스타일
     // width: 100%; // 이미지 너비를 줄입니다 (예: 전체 너비의 80%)
     margin-top: 140px;
-    margin-left: 58px;
+    margin-left: 20px;
   }
-}
 
   .slick-dots {
     li {
@@ -44,9 +46,13 @@ export const BannerStyle = styled.div`
       button {
         // dots 버튼 스타일링
         width: 25px; // 너비
-        height: 10px; // 높이
+        height: 1px; // 높이
         border-radius: 0; // 원형이 아닌 네모 모양으로 변경
-        background: #; // 배경색, 원하는 색상으로 변경 가능
+        background: #FBE6C9; // 배경색, 원하는 색상으로 변경 가능
+        padding :1px;
+        margin-left:20px;
+        margin-right:20px;
+        margin-top: -20px;
 
         &:before {
           // slick 슬라이더가 기본적으로 가지고 있는 before 스타일을 재정의
@@ -56,8 +62,6 @@ export const BannerStyle = styled.div`
       }
 
       &.slick-active button {
-        background: #ff00ff; // 활성화된 dot의 색상 변경
+        background: #FBB24D; // 활성화된 dot의 색상 변경
       }
-    }
-  }
 `;
