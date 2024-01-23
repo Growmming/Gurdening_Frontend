@@ -1,14 +1,12 @@
 import styled from 'styled-components';
 import { RouterProvider } from 'react-router-dom';
-import mainRouter from './routes/main-route';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Category from './pages/Category';
-import Search from './pages/Search';
-import MyPage from './pages/MyPage';
-import NavBar from './components/NavBar';
-// 다른 필요한 임포트들...
+import Home from './pages/home/Home';
+// import Category from '../pages/category/Category';
+// import Search from '../pages/search/Search';
+// import MyPage from '../pages/mypage/MyPage';
+// import NavBar from '../components/NavBar';
 
 const Wrapper = styled.div`
   background-color: #ffffff;
@@ -17,16 +15,11 @@ const Wrapper = styled.div`
 
 const App = () => {
   return (
-    <Router>
-      <NavBar />
+    <Wrapper>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/category" element={<Category />} />
-        <Route path="/search" element={<Search />} />
-        <Route path="/mypage" element={<MyPage />} />
-        {/* 여기에 추가로 라우트를 설정할 수 있습니다. */}
+        <Route path="/home" element={<Home />} />
       </Routes>
-    </Router>
+    </Wrapper>
   );
 };
 
@@ -41,3 +34,20 @@ export default App;
 //   );
 // }
 
+// const App = () => {
+//   return (
+//     <Router>
+//       <Routes>
+//         {/* LoginPage에 대해서는 NavBar를 렌더링하지 않습니다. */}
+//         <Route path="/login" element={<LoginPage />} />
+
+//         {/* 다른 모든 페이지에 대해서는 NavBar를 포함하여 렌더링합니다. */}
+//         <Route path="/" element={<><NavBar /><Home /></>} />
+//         <Route path="/category" element={<><NavBar /><Category /></>} />
+//         <Route path="/search" element={<><NavBar /><Search /></>} />
+//         <Route path="/mypage" element={<><NavBar /><MyPage /></>} />
+//         {/* 여기에 추가로 라우트를 설정할 수 있습니다. */}
+//       </Routes>
+//     </Router>
+//   );
+// };

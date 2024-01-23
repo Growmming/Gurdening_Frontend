@@ -1,15 +1,24 @@
 import React from 'react';
 import Slider from 'react-slick';
 import { useNavigate } from 'react-router-dom';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { BannerStyle } from './Banner.Style';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import * as S from './Banner.Style';
 
-// 이미지와 라우팅 경로를 포함하는 배열입니다.
+// 이미지 & 라우팅 경로
 const images = [
-  { src: '/path/to/your/image1.jpg', route: '/page1' },
-  { src: '/path/to/your/image2.jpg', route: '/page2' },
-  { src: '/path/to/your/image3.jpg', route: '/page3' },
+  {
+    src: 'https://i.pinimg.com/474x/df/18/ac/df18ac30c985344f6a2efd7fb691a2d5.jpg',
+    route: '/page1',
+  },
+  {
+    src: 'https://i.pinimg.com/474x/df/18/ac/df18ac30c985344f6a2efd7fb691a2d5.jpg',
+    route: '/page2',
+  },
+  {
+    src: 'https://i.pinimg.com/474x/df/18/ac/df18ac30c985344f6a2efd7fb691a2d5.jpg',
+    route: '/page3',
+  },
 ];
 
 const Banner = () => {
@@ -20,6 +29,7 @@ const Banner = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
     autoplay: true,
     autoplaySpeed: 5000,
   };
@@ -29,7 +39,7 @@ const Banner = () => {
   };
 
   return (
-    <BannerStyle>
+    <S.BannerStyle>
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index} onClick={() => handleImageClick(image.route)}>
@@ -37,7 +47,7 @@ const Banner = () => {
           </div>
         ))}
       </Slider>
-    </BannerStyle>
+    </S.BannerStyle>
   );
 };
 
