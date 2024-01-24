@@ -6,7 +6,7 @@ export const NavWrapper = styled.div`
   right: 0;
   bottom: 0;
   height: 90px;
-  background-color: #fef5a6;
+  /* background-color: #fef5a6; */
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -44,7 +44,9 @@ export const NavLogo = styled.img`
   z-index: 11;
 `;
 export const NavText = styled.span`
+  color: ${({ active }) => (active ? '#FBB24D' : '#848484')};
   display: block;
   font-size: 12px;
   margin-top: 4px;
+  font-weight: bold;
 `;
