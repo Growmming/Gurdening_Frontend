@@ -8,7 +8,7 @@ import * as S from './Banner.Style';
 // 이미지 & 라우팅 경로
 const images = [
   {
-    src: 'https://i.pinimg.com/474x/df/18/ac/df18ac30c985344f6a2efd7fb691a2d5.jpg',
+    src: 'https://i.pinimg.com/474x/94/f6/f9/94f6f9e60b0e3e0fedb698798d547868.jpg',
     route: '/page1',
   },
   {
