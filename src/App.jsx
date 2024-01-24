@@ -14,21 +14,20 @@ const Wrapper = styled.div`
   height: 100vh; // 페이지 로드 전 배경 테스트용 높이 설정
 `;
 
-const Container = styled.div`
-  width: 325px;
-  background-color: #ffffff;
-  height: 100vh; // 페이지 로드 전 배경 테스트용 높이 설정
-`;
+// const Container = styled.div`
+//   width: 325px;
+//   background-color: #ffffff;
+//   height: 100vh; // 페이지 로드 전 배경 테스트용 높이 설정
+//   margin: 0 auto; // 중앙 정렬
+// `;
 
 const App = () => {
   return (
     <Wrapper>
       <NavBar />
-      <Container>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </Container>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </Wrapper>
   );
 };
