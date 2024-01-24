@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const BannerWrapper = styled.div`
   width: 375px;
-  // height: 60vh;
+  //height: 60vh;
   overflow: hidden;
 `;
 
@@ -13,20 +13,21 @@ export const BannerStyle = styled.div`
     position: absolute;
     top: 10px;
     z-index: 10;
-    max-width: 100%; // 텍스트 영역의 최대 너비
-    white-space: nowrap; // 텍스트가 줄바꿈되지 않도록 설정
-    // text-align: center;
-
+    max-width: 100%;
+    white-space: nowrap;
     width: 100%;
     color: white;
     font-size: 13px;
     font-weight: bold;
     background-color: #fbb24d;
     padding: 10px 25px;
-    // margin: 0px 25px 800px 25px; //top right bottom left
-    
-    // border-top-left-radius: 20px;
-    // border-top-right-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // span {
+    //   margin-left: 25px;
+    // }
   }
 
   .banner-image img {
@@ -40,33 +41,31 @@ export const BannerStyle = styled.div`
     max-width: 375px;
     height: auto; // 높이는 자동으로 조절
     // 이미지 크기 조절을 위한 추가 스타일
-    // width: 100%; // 이미지 너비를 줄입니다 (예: 전체 너비의 80%)
+    // width: 100%; // 이미지 너비
     margin-top: 10px;
     // margin-left: 25px;
   }
 
   .slick-dots {
     li {
-      // dots 리스트 아이템 스타일링
       button {
-        // dots 버튼 스타일링
-        width: 25px; // 너비
-        height: 1px; // 높이
-        border-radius: 0; // 원형이 아닌 네모 모양으로 변경
-        background: #FBE6C9; // 배경색, 원하는 색상으로 변경 가능
-        padding :1px;
-        margin-left: 110px;
-        margin-right:20px;
+        width: 25px;
+        height: 1px;
+        border-radius: 0;
+        background: #fbe6c9;
+        padding: 1px;
+        margin-right: 25px;
         margin-top: -20px;
 
         &:before {
-          // slick 슬라이더가 기본적으로 가지고 있는 before 스타일을 재정의
-          font-size: 0; // 기존 dot 표시 제거
-          color: transparent; // 투명하게 설정
+          font-size: 0;
+          color: transparent;
         }
       }
 
       &.slick-active button {
-        background: #FBB24D; // 활성화된 dot의 색상 변경
+        background: #fbb24d;
       }
+    }
+  }
 `;
