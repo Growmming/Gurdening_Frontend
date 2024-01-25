@@ -3,10 +3,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
 import NavBar from './components/navBar/NavBar';
-// import Category from '../pages/category/Category';
-// import Search from '../pages/search/Search';
-// import MyPage from '../pages/mypage/MyPage';
-// import NavBar from '../components/NavBar';
+import MyInfScrollCont from './components/InfScroll/MyInfScrollCont';
 
 const Wrapper = styled.div`
   position: relative;
@@ -14,21 +11,16 @@ const Wrapper = styled.div`
   height: 100vh; // 페이지 로드 전 배경 테스트용 높이 설정
 `;
 
-// const Container = styled.div`
-//   width: 325px;
-//   background-color: #ffffff;
-//   height: 100vh; // 페이지 로드 전 배경 테스트용 높이 설정
-//   margin: 0 auto; // 중앙 정렬
-// `;
-
 const App = () => {
   return (
-    <Wrapper>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </Wrapper>
+    <MyInfScrollCont>
+      <Wrapper>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Wrapper>
+    </MyInfScrollCont>
   );
 };
 
