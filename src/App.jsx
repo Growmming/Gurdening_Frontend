@@ -8,7 +8,7 @@ import MyInfScrollCont from './components/InfScroll/MyInfScrollCont';
 const Wrapper = styled.div`
   position: relative;
   background-color: #ffffff;
-  height: 100vh; // 페이지 로드 전 배경 테스트용 높이 설정
+  height: auto; // 페이지 로드 전 배경 테스트용 높이 설정
 `;
 
 const App = () => {
