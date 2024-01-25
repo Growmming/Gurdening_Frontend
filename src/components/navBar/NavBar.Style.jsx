@@ -6,7 +6,7 @@ export const NavWrapper = styled.div`
   right: 0;
   bottom: 0;
   height: 90px;
-  /* background-color: #fef5a6; */
+  background-color: #fef5a6;
   display: flex;
   align-items: center;
   justify-content: space-around;
