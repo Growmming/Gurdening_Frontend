@@ -1,48 +1,45 @@
 import React from 'react';
-import Slider from 'react-slick';
 import { useNavigate } from 'react-router-dom';
-import * as S from './CateItem.Style';
+import StyledCateItem from './CateItem.Style'; // 스타일 파일을 임포트합니다.
 
-const categories = [
-  { name: 'Cooking', icon: 'cook-icon.png', path: '/cooking' },
-  { name: 'Daily_Life', icon: 'cook-icon.png', path: '/cook' },
-  { name: 'Cleanliness', icon: 'cook-icon.png', path: '/cook' },
-  { name: 'Treatment', icon: 'cook-icon.png', path: '/cook' },
-  { name: 'Health', icon: 'cook-icon.png', path: '/cook' },
-  { name: 'HomeEco', icon: 'cook-icon.png', path: '/cook' },
-];
-
-const CateItem = () => {
+const CateItem = ({ name, icon, path }) => {
   const navigate = useNavigate();
-  const settings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 4.5, // 부분적으로 다음 항목을 보여주기 위해 소수 사용
-    slidesToScroll: 4,
-    nextArrow: <SlickArrow type="next" />,
-    prevArrow: <SlickArrow type="prev" />,
-  };
 
-  const handleCategoryClick = (path) => {
-    navigate(path);
+  const handleItemClick = () => {
+    navigate(path); // 클릭 시 해당 경로로 이동
   };
 
   return (
-    <S.CategoryContainer>
-      <Slider {...settings}>
-        {categories.map((category) => (
-          <S.CategoryItem
-            key={category.name}
-            onClick={() => handleCategoryClick(category.path)}
-          >
-            <S.CategoryIcon backgroundImage={category.icon} />
-            <S.CategoryName>{category.name}</S.CategoryName>
-          </S.CategoryItem>
-        ))}
-      </Slider>
-    </S.CategoryContainer>
+    <StyledCateItem onClick={handleItemClick}>
+      <div className="icon">
+        <img src={icon} alt={`${name} icon`} />
+      </div>
+      <div className="name">{name}</div>
+    </StyledCateItem>
   );
 };
 
 export default CateItem;
+
+// import React from 'react';
+// import { useNavigate } from 'react-router-dom';
+// import * as S from './CateItem.Style';
+
+// const CateItem = ({ name, icon, path }) => {
+//   const navigate = useNavigate();
+
+//   const handleItemClick = () => {
+//     navigate(path);
+//   };
+
+//   return (
+//     <S.CategoryItem onClick={handleItemClick}>
+//       <div className="icon">
+//         <img src={icon} alt={`${name} icon`} />
+//       </div>
+//       <div className="name">{name}</div>
+//     </S.CategoryItem>
+//   );
+// };
+
+// export default CateItem;
