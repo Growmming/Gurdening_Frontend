@@ -2,13 +2,13 @@ import React from 'react';
 import CateItem from './CateItem';
 
 // 카테고리 데이터 리스트
-const categoryData = [
-  { name: 'Cooking', icon: 'cook-icon.png', path: '/cooking' },
-  { name: 'Daily_Life', icon: 'cook-icon.png', path: '/cook' },
-  { name: 'Cleanliness', icon: 'cook-icon.png', path: '/cook' },
-  { name: 'Treatment', icon: 'cook-icon.png', path: '/cook' },
-  { name: 'Health', icon: 'cook-icon.png', path: '/cook' },
-  { name: 'House', icon: 'cook-icon.png', path: '/cook' },
+const categories = [
+  { name: 'Cooking', icon: 'cook-icon.png', path: '/menual1' },
+  { name: 'Daily_Life', icon: 'cook-icon.png', path: '/menual2' },
+  { name: 'Cleanliness', icon: 'cook-icon.png', path: '/menual3' },
+  { name: 'Treatment', icon: 'cook-icon.png', path: '/menual4' },
+  { name: 'Health', icon: 'cook-icon.png', path: '/menual5' },
+  { name: 'HomeEco', icon: 'cook-icon.png', path: '/menual6' },
 ];
 
 const CategoryList = () => {
