@@ -26,6 +26,10 @@ const GlobalStyled = createGlobalStyle`
     font-weight: 400;
   }
 
+  :lang(ko) {
+    font-family: 'Jua', sans-serif;
+  }
+
 
 `;
 

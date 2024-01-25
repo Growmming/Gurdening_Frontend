@@ -2,6 +2,8 @@ import React from 'react';
 import Banner from '../../components/banner/Banner';
 // import GurdeningImage from '../../assets/images/logo-gurdening-subtitle.png';
 import { LogoImg } from './Home.Style';
+import CategoryList from '../../components/homeCategory/CategoryList';
+
 const Home = () => {
   const images = [
     {
@@ -20,14 +22,9 @@ const Home = () => {
 
   return (
     <div>
-      {/* <img
-        src={GurdeningImage}
-        alt="Gurdening"
-        style={{ maxWidth: '100%', height: '23vh' }} // 여기에서 이미지의 최대 너비를 설정
-      />
-      <img src={GurdeningImage} alt="Gurdening" /> */}
       <LogoImg />
       <Banner images={images} />
+      <CategoryList />
     </div>
   );
 };

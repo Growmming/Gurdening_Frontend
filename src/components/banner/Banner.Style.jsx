@@ -18,7 +18,7 @@ export const BannerStyle = styled.div`
     width: 100%;
     color: white;
     font-size: 13px;
-    font-weight: bold;
+    // font-weight: bold;
     background-color: #fbb24d;
     padding: 10px 25px;
     display: flex;
