@@ -1,8 +1,9 @@
 import React from 'react';
 import Banner from '../../components/banner/Banner';
-// import GurdeningImage from '../../assets/images/logo-gurdening-subtitle.png';
-import { LogoImg } from './Home.Style';
+import * as S from './Home.Style';
 import CategoryList from '../../components/homeCategory/CategoryList';
+import LogoImg from '../../assets/images/BannerLogo.png';
+// const logoImg = '../../assets/images/BannerLogo.png';
 
 const Home = () => {
   const images = [
@@ -22,7 +23,9 @@ const Home = () => {
 
   return (
     <div>
-      <LogoImg />
+      <S.LogoImgWrapper>
+        <S.LogoImg src={LogoImg} alt="Gurdening " />
+      </S.LogoImgWrapper>
       <Banner images={images} />
       <CategoryList />
     </div>
