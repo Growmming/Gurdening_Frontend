@@ -1,6 +1,6 @@
 // CategoryList.js
 import React from 'react';
-import CateItem from './CateItem';
+import CateItem from './CategoryItem';
 import { CategoryListWrapper } from './CategoryList.Style';
 
 // 카테고리 데이터 리스트

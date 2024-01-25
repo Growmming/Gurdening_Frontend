@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
+import Category from './pages/category/Category';
 import NavBar from './components/navBar/NavBar';
 import MyInfScrollCont from './components/InfScroll/MyInfScrollCont';
 
@@ -19,6 +20,7 @@ const App = () => {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/category" element={<Category />} />
         </Routes>
       </MyInfScrollCont>
     </Wrapper>

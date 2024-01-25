@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const CategoryListWrapper = styled.div`
+export const CateListWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;

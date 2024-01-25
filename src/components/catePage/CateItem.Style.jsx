@@ -1,35 +1,39 @@
 import styled from 'styled-components';
 
 export const CateItemWrapper = styled.div`
+  width: 325px;
+  height: 80px;
   display: flex;
   align-items: center;
   padding: 10px;
   margin: 5px;
-  background-color: #f0f0f0; // 색상은 예시입니다. 실제 디자인에 맞게 조정해야 합니다.
+  // background-color: #677d22;
+  background-color: #d2d999;
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #e0e0e0; // 호버 상태의 배경색 변경
+    background-color: #fef5a6; // 호버 상태의 배경색 변경
   }
 `;
 
 export const CateIconWrapper = styled.div`
-  width: 70px; // 아이콘 배경의 너비
-  height: 70px; // 아이콘 배경의 높이
+  width: 80px; // 아이콘 배경의 너비
+  height: 60px; // 아이콘 배경의 높이
   background-color: #d2d999; // 아이콘 배경의 색상
   border-radius: 10px; // 아이콘 배경의 둥근 모서리
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 8px; // 아이콘과 텍스트 사이의 여백
+  margin: 8px;
+  padding: 5px;
 `;
 
 export const CateIcon = styled.img`
-  width: 50px; // 크기는 예시입니다. 실제 디자인에 맞게 조정해야 합니다.
-  height: 50px;
-  margin-right: 10px;
+  width: 60px; // 크기는 예시입니다. 실제 디자인에 맞게 조정해야 합니다.
+  height: 60px;
+  // margin-right: 10px;
 `;
 
 export const CateTextWrapper = styled.div`

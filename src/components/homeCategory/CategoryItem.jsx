@@ -1,7 +1,7 @@
 // CateItem.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import * as S from './CateItem.Style';
+import * as S from './CategoryItem.Style';
 
 const CateItem = ({ name, icon, path }) => {
   const navigate = useNavigate();

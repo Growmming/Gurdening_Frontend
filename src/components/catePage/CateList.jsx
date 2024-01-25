@@ -1,7 +1,7 @@
 // CategoryList.js
 import React from 'react';
 import CateItem from './CateItem';
-import { CategoryListWrapper } from './CateList.Style';
+import { CateListWrapper } from './CateList.Style';
 
 // 카테고리 데이터 리스트
 const categoryData = [
@@ -17,7 +17,7 @@ const categoryData = [
 
 const CategoryList = () => {
   return (
-    <CategoryListWrapper>
+    <CateListWrapper>
       {categoryData.map((category) => (
         <CateItem
           key={category.name}
@@ -26,7 +26,7 @@ const CategoryList = () => {
           path={category.path}
         />
       ))}
-    </CategoryListWrapper>
+    </CateListWrapper>
   );
 };
 
