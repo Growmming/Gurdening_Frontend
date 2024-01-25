@@ -35,9 +35,10 @@ export const CateTextWrapper = styled.div`
 `;
 
 export const CateText = styled.span`
-  font-size: 13px; // 텍스트의 폰트 크기
-  color: black; // 텍스트의 색상
+  font-size: 15px; // 텍스트의 폰트 크기
+  color: #848484; // 텍스트의 색상
   text-align: center; // 텍스트 중앙 정렬
+  // font-weight: bold;
 `;
 
 // import styled from 'styled-components';

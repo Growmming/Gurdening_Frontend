@@ -27,7 +27,7 @@ const GlobalStyled = createGlobalStyle`
   }
 
   :lang(ko) {
-    font-family: 'Cute Font', sans-serif;
+    font-family: 'Jua', sans-serif;
   }
 
 

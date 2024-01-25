@@ -11,6 +11,8 @@ const categoryData = [
   { name: '치료', icon: 'cook-icon.png', path: '/menual4' },
   { name: '건강', icon: 'cook-icon.png', path: '/menual5' },
   { name: '가정', icon: 'cook-icon.png', path: '/menual6' },
+  { name: '운동', icon: 'cook-icon.png', path: '/menual7' },
+  { name: '법률', icon: 'cook-icon.png', path: '/menual8' },
 ];
 
 const CategoryList = () => {
