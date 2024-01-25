@@ -8,19 +8,20 @@ import MyInfScrollCont from './components/InfScroll/MyInfScrollCont';
 const Wrapper = styled.div`
   position: relative;
   background-color: #ffffff;
+  min-height: 100vh;
   height: auto; // 페이지 로드 전 배경 테스트용 높이 설정
 `;
 
 const App = () => {
   return (
-    <MyInfScrollCont>
-      <Wrapper>
+    <Wrapper>
+      <MyInfScrollCont>
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
-      </Wrapper>
-    </MyInfScrollCont>
+      </MyInfScrollCont>
+    </Wrapper>
   );
 };
 
