@@ -1,4 +1,3 @@
-// CategoryList.js
 import React from 'react';
 import CateItem from './CategoryItem';
 import { CategoryListWrapper } from './CategoryList.Style';
